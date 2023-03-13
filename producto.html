@@ -34,19 +34,24 @@
         h3{
             text-align: center;
         }
+        button{
+            margin-left: 4em;
+        }
     </style>
     <script> 
         function cancel() { 
         window.open("producto.html",'_self');
         } 
+        </script>
+        <script>
         function save() {
-            window.open("guardar.html",'_self');
+        window.open("guardar.html",'_self');
         }
         </script>
 </head>
 <body>
     <h3>Registro de Producto</h3>
-    <form>
+    <form action="guardar.html" >
         <ul>
             <li>
                 <label>Codigo: </label>
@@ -86,8 +91,8 @@
                 </select>
             </li>
         </ul>
-        <button onclick="save()" class="guar">Guardar</button>
-        <button onclick="cancel()" class="can">Cancelar</button>
+            <button type="submit">Guardar</button> 
+            <button type="reset">Cancelar</button>
     </form>
     
 </body>
